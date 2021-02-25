@@ -13,6 +13,9 @@
 		E56E65C225E8379600C6FDBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56E65C025E8379600C6FDBD /* Main.storyboard */; };
 		E56E65C425E8379900C6FDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56E65C325E8379900C6FDBD /* Assets.xcassets */; };
 		E56E65C725E8379900C6FDBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56E65C525E8379900C6FDBD /* LaunchScreen.storyboard */; };
+		E56E65D325E84CB300C6FDBD /* BibliaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E65D225E84CB300C6FDBD /* BibliaVC.swift */; };
+		E56E65D725E84CC300C6FDBD /* DevocionalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E65D625E84CC300C6FDBD /* DevocionalVC.swift */; };
+		E56E65DA25E84CD200C6FDBD /* OracaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E65D925E84CD200C6FDBD /* OracaoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E56E65C325E8379900C6FDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E56E65C625E8379900C6FDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E56E65C825E8379900C6FDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56E65D225E84CB300C6FDBD /* BibliaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliaVC.swift; sourceTree = "<group>"; };
+		E56E65D625E84CC300C6FDBD /* DevocionalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevocionalVC.swift; sourceTree = "<group>"; };
+		E56E65D925E84CD200C6FDBD /* OracaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracaoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		E56E65B925E8379600C6FDBD /* myBible */ = {
 			isa = PBXGroup;
 			children = (
+				E56E65C025E8379600C6FDBD /* Main.storyboard */,
+				E56E65CF25E84C7B00C6FDBD /* Biblia */,
+				E56E65D025E84C8300C6FDBD /* Devocional */,
+				E56E65D125E84C8900C6FDBD /* Oracao */,
 				E56E65BA25E8379600C6FDBD /* AppDelegate.swift */,
 				E56E65BC25E8379600C6FDBD /* SceneDelegate.swift */,
 				E56E65BE25E8379600C6FDBD /* ViewController.swift */,
-				E56E65C025E8379600C6FDBD /* Main.storyboard */,
 				E56E65C325E8379900C6FDBD /* Assets.xcassets */,
 				E56E65C525E8379900C6FDBD /* LaunchScreen.storyboard */,
 				E56E65C825E8379900C6FDBD /* Info.plist */,
 			);
 			path = myBible;
+			sourceTree = "<group>";
+		};
+		E56E65CF25E84C7B00C6FDBD /* Biblia */ = {
+			isa = PBXGroup;
+			children = (
+				E56E65D225E84CB300C6FDBD /* BibliaVC.swift */,
+			);
+			path = Biblia;
+			sourceTree = "<group>";
+		};
+		E56E65D025E84C8300C6FDBD /* Devocional */ = {
+			isa = PBXGroup;
+			children = (
+				E56E65D625E84CC300C6FDBD /* DevocionalVC.swift */,
+			);
+			path = Devocional;
+			sourceTree = "<group>";
+		};
+		E56E65D125E84C8900C6FDBD /* Oracao */ = {
+			isa = PBXGroup;
+			children = (
+				E56E65D925E84CD200C6FDBD /* OracaoVC.swift */,
+			);
+			path = Oracao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56E65D725E84CC300C6FDBD /* DevocionalVC.swift in Sources */,
+				E56E65DA25E84CD200C6FDBD /* OracaoVC.swift in Sources */,
 				E56E65BF25E8379600C6FDBD /* ViewController.swift in Sources */,
+				E56E65D325E84CB300C6FDBD /* BibliaVC.swift in Sources */,
 				E56E65BB25E8379600C6FDBD /* AppDelegate.swift in Sources */,
 				E56E65BD25E8379600C6FDBD /* SceneDelegate.swift in Sources */,
 			);
