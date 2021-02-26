@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E550E98925E960DB00A5360B /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E98825E960DB00A5360B /* Books.swift */; };
+		E550E98D25E9615500A5360B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E98C25E9615500A5360B /* Book.swift */; };
+		E550E99025E961A500A5360B /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E98F25E961A500A5360B /* Chapter.swift */; };
+		E550E99325E9628800A5360B /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E99225E9628800A5360B /* Verse.swift */; };
+		E550E99625E963B600A5360B /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E99525E963B600A5360B /* Versions.swift */; };
 		E56E65BB25E8379600C6FDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E65BA25E8379600C6FDBD /* AppDelegate.swift */; };
 		E56E65BD25E8379600C6FDBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E65BC25E8379600C6FDBD /* SceneDelegate.swift */; };
 		E56E65BF25E8379600C6FDBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E65BE25E8379600C6FDBD /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E550E98825E960DB00A5360B /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		E550E98C25E9615500A5360B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		E550E98F25E961A500A5360B /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		E550E99225E9628800A5360B /* Verse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verse.swift; sourceTree = "<group>"; };
+		E550E99525E963B600A5360B /* Versions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Versions.swift; sourceTree = "<group>"; };
 		E56E65B725E8379600C6FDBD /* myBible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56E65BA25E8379600C6FDBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E56E65BC25E8379600C6FDBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E550E98725E960D000A5360B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E550E98825E960DB00A5360B /* Books.swift */,
+				E550E98C25E9615500A5360B /* Book.swift */,
+				E550E98F25E961A500A5360B /* Chapter.swift */,
+				E550E99225E9628800A5360B /* Verse.swift */,
+				E550E99525E963B600A5360B /* Versions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E56E65AE25E8379600C6FDBD = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +101,7 @@
 		E56E65CF25E84C7B00C6FDBD /* Biblia */ = {
 			isa = PBXGroup;
 			children = (
+				E550E98725E960D000A5360B /* Model */,
 				E56E65D225E84CB300C6FDBD /* BibliaVC.swift */,
 			);
 			path = Biblia;
@@ -170,12 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E550E98D25E9615500A5360B /* Book.swift in Sources */,
 				E56E65D725E84CC300C6FDBD /* DevocionalVC.swift in Sources */,
 				E56E65DA25E84CD200C6FDBD /* OracaoVC.swift in Sources */,
+				E550E99625E963B600A5360B /* Versions.swift in Sources */,
+				E550E99025E961A500A5360B /* Chapter.swift in Sources */,
 				E56E65BF25E8379600C6FDBD /* ViewController.swift in Sources */,
+				E550E98925E960DB00A5360B /* Books.swift in Sources */,
 				E56E65D325E84CB300C6FDBD /* BibliaVC.swift in Sources */,
 				E56E65BB25E8379600C6FDBD /* AppDelegate.swift in Sources */,
 				E56E65BD25E8379600C6FDBD /* SceneDelegate.swift in Sources */,
+				E550E99325E9628800A5360B /* Verse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
