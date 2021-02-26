@@ -8,22 +8,25 @@
 import UIKit
 
 class DevocionalVC: UIViewController {
-
+    
+    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var passagemLabel: UILabel!
+    @IBOutlet weak var textoLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.configView()
     }
+
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configView() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d/MMM/y - E"
+        self.dataLabel.text = formatter.string(from: Date())
+        API.getRandomVerse(version: "nvi") { (verse) in
+            self.passagemLabel.text = "\(verse.book.name) \(verse.chapter):\(verse.number)"
+            self.textoLabel.text = "\"\(verse.text)\""
+        }
     }
-    */
-
 }

@@ -7,8 +7,7 @@
 
 import Foundation
 
-// https://www.abibliadigital.com.br/api/versions
-// return all Bible versions and number os verses
+
 
 struct Versions:Codable {
     let version:String
