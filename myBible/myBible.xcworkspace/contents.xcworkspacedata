@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/Fabio/Documents/Karen/02.Projetos/myBible/myBible/myBible/Oracao/PedidosDeOracao+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/Fabio/Documents/Karen/02.Projetos/myBible/myBible/myBible/Oracao/PedidosDeOracao+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:myBible.xcodeproj">
    </FileRef>
    <FileRef

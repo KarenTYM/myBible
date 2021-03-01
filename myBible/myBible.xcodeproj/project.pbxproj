@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E516016B25ED8DC1001F177A /* myBible.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E516016925ED8DC1001F177A /* myBible.xcdatamodeld */; };
+		E516016E25ED8F54001F177A /* PedidosDeOracao+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516016D25ED8F54001F177A /* PedidosDeOracao+CoreDataProperties.swift */; };
+		E516017125ED8F57001F177A /* PedidosDeOracao+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E516017025ED8F57001F177A /* PedidosDeOracao+CoreDataClass.swift */; };
 		E550E98925E960DB00A5360B /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E98825E960DB00A5360B /* Books.swift */; };
 		E550E98D25E9615500A5360B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E98C25E9615500A5360B /* Book.swift */; };
 		E550E99025E961A500A5360B /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550E98F25E961A500A5360B /* Chapter.swift */; };
@@ -19,6 +22,8 @@
 		E550E9AD25E9A92500A5360B /* LivrosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E550E9AB25E9A92500A5360B /* LivrosCell.xib */; };
 		E553815A25ED6F2300A2A98C /* CapituloCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553815825ED6F2300A2A98C /* CapituloCell.swift */; };
 		E553815B25ED6F2300A2A98C /* CapituloCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E553815925ED6F2300A2A98C /* CapituloCell.xib */; };
+		E553816225ED830400A2A98C /* OracaoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553816025ED830400A2A98C /* OracaoCell.swift */; };
+		E553816325ED830400A2A98C /* OracaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E553816125ED830400A2A98C /* OracaoCell.xib */; };
 		E5538E4C25EAFCCB00100849 /* VersiculoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5538E4A25EAFCCB00100849 /* VersiculoCell.swift */; };
 		E5538E4D25EAFCCB00100849 /* VersiculoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5538E4B25EAFCCB00100849 /* VersiculoCell.xib */; };
 		E56E65BB25E8379600C6FDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E65BA25E8379600C6FDBD /* AppDelegate.swift */; };
@@ -37,6 +42,9 @@
 		258FB1F700133ED3819408F0 /* Pods-myBible.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBible.release.xcconfig"; path = "Target Support Files/Pods-myBible/Pods-myBible.release.xcconfig"; sourceTree = "<group>"; };
 		68D0140267997DBE46C6F801 /* Pods_myBible.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myBible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9300334C865A9AA027252A53 /* Pods-myBible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myBible.debug.xcconfig"; path = "Target Support Files/Pods-myBible/Pods-myBible.debug.xcconfig"; sourceTree = "<group>"; };
+		E516016A25ED8DC1001F177A /* myBible.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myBible.xcdatamodel; sourceTree = "<group>"; };
+		E516016D25ED8F54001F177A /* PedidosDeOracao+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PedidosDeOracao+CoreDataProperties.swift"; path = "/Users/Fabio/Documents/Karen/02.Projetos/myBible/myBible/myBible/Oracao/PedidosDeOracao+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		E516017025ED8F57001F177A /* PedidosDeOracao+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PedidosDeOracao+CoreDataClass.swift"; path = "/Users/Fabio/Documents/Karen/02.Projetos/myBible/myBible/myBible/Oracao/PedidosDeOracao+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		E550E98825E960DB00A5360B /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
 		E550E98C25E9615500A5360B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E550E98F25E961A500A5360B /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		E550E9AB25E9A92500A5360B /* LivrosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LivrosCell.xib; sourceTree = "<group>"; };
 		E553815825ED6F2300A2A98C /* CapituloCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapituloCell.swift; sourceTree = "<group>"; };
 		E553815925ED6F2300A2A98C /* CapituloCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CapituloCell.xib; sourceTree = "<group>"; };
+		E553816025ED830400A2A98C /* OracaoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracaoCell.swift; sourceTree = "<group>"; };
+		E553816125ED830400A2A98C /* OracaoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OracaoCell.xib; sourceTree = "<group>"; };
 		E5538E4A25EAFCCB00100849 /* VersiculoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersiculoCell.swift; sourceTree = "<group>"; };
 		E5538E4B25EAFCCB00100849 /* VersiculoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VersiculoCell.xib; sourceTree = "<group>"; };
 		E56E65B725E8379600C6FDBD /* myBible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBible.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +196,11 @@
 			isa = PBXGroup;
 			children = (
 				E56E65D925E84CD200C6FDBD /* OracaoVC.swift */,
+				E553816025ED830400A2A98C /* OracaoCell.swift */,
+				E553816125ED830400A2A98C /* OracaoCell.xib */,
+				E516016925ED8DC1001F177A /* myBible.xcdatamodeld */,
+				E516016D25ED8F54001F177A /* PedidosDeOracao+CoreDataProperties.swift */,
+				E516017025ED8F57001F177A /* PedidosDeOracao+CoreDataClass.swift */,
 			);
 			path = Oracao;
 			sourceTree = "<group>";
@@ -255,6 +270,7 @@
 				E550E9AD25E9A92500A5360B /* LivrosCell.xib in Resources */,
 				E553815B25ED6F2300A2A98C /* CapituloCell.xib in Resources */,
 				E56E65C225E8379600C6FDBD /* Main.storyboard in Resources */,
+				E553816325ED830400A2A98C /* OracaoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,17 +325,21 @@
 			files = (
 				E550E98D25E9615500A5360B /* Book.swift in Sources */,
 				E56E65D725E84CC300C6FDBD /* DevocionalVC.swift in Sources */,
+				E553816225ED830400A2A98C /* OracaoCell.swift in Sources */,
 				E56E65DA25E84CD200C6FDBD /* OracaoVC.swift in Sources */,
 				E550E99625E963B600A5360B /* Versions.swift in Sources */,
 				E550E9A425E9A54500A5360B /* CapituloVC.swift in Sources */,
 				E5538E4C25EAFCCB00100849 /* VersiculoCell.swift in Sources */,
+				E516016B25ED8DC1001F177A /* myBible.xcdatamodeld in Sources */,
 				E550E99025E961A500A5360B /* Chapter.swift in Sources */,
 				E56E65BF25E8379600C6FDBD /* ViewController.swift in Sources */,
 				E550E98925E960DB00A5360B /* Books.swift in Sources */,
 				E56E65D325E84CB300C6FDBD /* LivrosVC.swift in Sources */,
+				E516016E25ED8F54001F177A /* PedidosDeOracao+CoreDataProperties.swift in Sources */,
 				E550E9A825E9A86100A5360B /* VersiculoVC.swift in Sources */,
 				E550E9AC25E9A92500A5360B /* LivrosCell.swift in Sources */,
 				E56E65BB25E8379600C6FDBD /* AppDelegate.swift in Sources */,
+				E516017125ED8F57001F177A /* PedidosDeOracao+CoreDataClass.swift in Sources */,
 				E56E65BD25E8379600C6FDBD /* SceneDelegate.swift in Sources */,
 				E550E99C25E966A900A5360B /* API.swift in Sources */,
 				E553815A25ED6F2300A2A98C /* CapituloCell.swift in Sources */,
@@ -525,6 +545,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E516016925ED8DC1001F177A /* myBible.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E516016A25ED8DC1001F177A /* myBible.xcdatamodel */,
+			);
+			currentVersion = E516016A25ED8DC1001F177A /* myBible.xcdatamodel */;
+			path = myBible.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E56E65AF25E8379600C6FDBD /* Project object */;
 }

@@ -38,6 +38,8 @@ class LivrosVC: UIViewController {
             self.livrosTableView.reloadData()
         }
     }
+    
+    
 }
 
 

@@ -12,12 +12,15 @@ class VersiculoVC: UIViewController {
     @IBOutlet weak var nomeLabel: UILabel!
     @IBOutlet weak var capituloLabel: UILabel!
     @IBOutlet weak var versiculoTableView: UITableView!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var forwardButton: UIButton!
     
     var numeroVersiculos:Int = 0
 //    var chapterVerses:BookDetail?
     var verse:[VerseChapter] = []
     var bookname:String = ""
     var capEscolhido:Int = 1
+    var numCapitulos:Int = 0
     
     // MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -25,7 +28,6 @@ class VersiculoVC: UIViewController {
 
         self.configView()
         self.fetchCapter()
-        // Do any additional setup after loading the view.
     }
     
     
@@ -43,7 +45,28 @@ class VersiculoVC: UIViewController {
             self.numeroVersiculos = chapter.chapter.verses
             self.verse = chapter.verses
             self.versiculoTableView.reloadData()
+            if chapter.chapter.number == 1 {
+                self.backButton.isHidden = true
+            } else {
+                self.backButton.isHidden = false
+            }
+            if chapter.chapter.number == self.numCapitulos {
+                self.forwardButton.isHidden = true
+            } else {
+                self.forwardButton.isHidden = false
+            }
         }
+    }
+    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        self.capEscolhido -= 1
+        self.fetchCapter()
+    }
+    
+    
+    @IBAction func forwardButtonTapped(_ sender: UIButton) {
+        self.capEscolhido += 1
+        self.fetchCapter()
     }
 }
 

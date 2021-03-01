@@ -28,7 +28,6 @@ class CapituloVC: UIViewController {
         self.configView()
         self.fetchBookDetails()
         self.numCapitulos()
-        // Do any additional setup after loading the view.
     }
     
     
@@ -79,22 +78,11 @@ extension CapituloVC: UITableViewDelegate, UITableViewDataSource {
         self.capEscolhido = self.capituloArray[indexPath.row]
         self.performSegue(withIdentifier: "VersiculoVC", sender: nil)
     }
-//}
-//
-//
-//// MARK: - extension CapituloCellProtocol
-//extension CapituloVC: CapituloCellProtocol {
-//   
-//    func goToVerses(verses: Int?) {
-//        self.performSegue(withIdentifier: "VersiculoVC", sender: verses)
-//        self.capEscolhido = verses ?? 1
-//    }
-//    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let verses:BookDetail? = sender as? BookDetail
         let vc = segue.destination as? VersiculoVC
-//        vc?.chapterVerses = verses
         vc?.bookname = self.book?.abbrev.pt ?? ""
         vc?.capEscolhido = self.capEscolhido
+        vc?.numCapitulos = self.book?.chapters ?? 0
     }
 }
