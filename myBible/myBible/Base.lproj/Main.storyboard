@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -161,48 +162,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Livro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrF-hS-CIc">
-                                <rect key="frame" x="20" y="118" width="374" height="27"/>
-                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
-                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capítulo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-oZ-RYx">
-                                <rect key="frame" x="20" y="160" width="374" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Livro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrF-hS-CIc">
+                                <rect key="frame" x="20" y="108" width="374" height="27"/>
                                 <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
                                 <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YZN-ns-qBb">
-                                <rect key="frame" x="0.0" y="217" width="414" height="596"/>
+                                <rect key="frame" x="0.0" y="206.5" width="414" height="606.5"/>
                                 <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capítulo Atual" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-oZ-RYx">
+                                <rect key="frame" x="132" y="155" width="150" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="hgx-Dd-0fg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNo-5d-4KS">
+                                <rect key="frame" x="5" y="145" width="60" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3hw-aD-r4I"/>
+                                    <constraint firstAttribute="height" constant="45" id="i2M-e6-Ko5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <imageReference key="image" image="chevron.backward.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="oYM-R7-O98" eventType="touchUpInside" id="HnQ-b4-SZP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-bG-Dho">
+                                <rect key="frame" x="349" y="145" width="60" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="DRm-oh-Ntw"/>
+                                    <constraint firstAttribute="width" constant="60" id="gEr-zg-4oH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <imageReference key="image" image="chevron.forward.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="forwardButtonTapped:" destination="oYM-R7-O98" eventType="touchUpInside" id="ETe-f4-cOd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r4g-F9-eFm"/>
                         <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="r4g-F9-eFm" firstAttribute="bottom" secondItem="YZN-ns-qBb" secondAttribute="bottom" id="25p-vS-Llc"/>
-                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="nNi-oZ-RYx" secondAttribute="trailing" constant="20" id="BAZ-wW-o3D"/>
-                            <constraint firstItem="BrF-hS-CIc" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" constant="20" id="JKH-cf-x3h"/>
-                            <constraint firstItem="BrF-hS-CIc" firstAttribute="top" secondItem="r4g-F9-eFm" secondAttribute="top" constant="30" id="MZi-4I-xcY"/>
-                            <constraint firstItem="YZN-ns-qBb" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" id="OmW-UO-aAf"/>
-                            <constraint firstItem="YZN-ns-qBb" firstAttribute="top" secondItem="nNi-oZ-RYx" secondAttribute="bottom" constant="30" id="UOo-cO-ZfZ"/>
-                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="BrF-hS-CIc" secondAttribute="trailing" constant="20" id="axZ-4R-IvJ"/>
-                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="YZN-ns-qBb" secondAttribute="trailing" id="gzP-lL-Mto"/>
-                            <constraint firstItem="nNi-oZ-RYx" firstAttribute="top" secondItem="BrF-hS-CIc" secondAttribute="bottom" constant="15" id="vCZ-m8-AHL"/>
-                            <constraint firstItem="nNi-oZ-RYx" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" constant="20" id="yCm-Ji-y6e"/>
+                            <constraint firstItem="nNi-oZ-RYx" firstAttribute="top" secondItem="BrF-hS-CIc" secondAttribute="bottom" constant="20" id="09b-4t-S4S"/>
+                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="rX6-bG-Dho" secondAttribute="trailing" constant="5" id="16m-1O-dgG"/>
+                            <constraint firstItem="rX6-bG-Dho" firstAttribute="top" secondItem="BrF-hS-CIc" secondAttribute="bottom" constant="10" id="1aY-TR-L4u"/>
+                            <constraint firstItem="YZN-ns-qBb" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" id="6VA-zn-qlL"/>
+                            <constraint firstItem="YZN-ns-qBb" firstAttribute="trailing" secondItem="r4g-F9-eFm" secondAttribute="trailing" id="9JC-X3-TyA"/>
+                            <constraint firstItem="kNo-5d-4KS" firstAttribute="top" secondItem="BrF-hS-CIc" secondAttribute="bottom" constant="10" id="FcR-4g-dz5"/>
+                            <constraint firstItem="kNo-5d-4KS" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" constant="5" id="IoC-th-EPQ"/>
+                            <constraint firstItem="YZN-ns-qBb" firstAttribute="bottom" secondItem="r4g-F9-eFm" secondAttribute="bottom" id="Qod-L2-0e8"/>
+                            <constraint firstItem="BrF-hS-CIc" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" constant="20" id="RTW-vp-BhX"/>
+                            <constraint firstItem="YZN-ns-qBb" firstAttribute="top" secondItem="nNi-oZ-RYx" secondAttribute="bottom" constant="30" id="hgZ-Ee-m1h"/>
+                            <constraint firstItem="BrF-hS-CIc" firstAttribute="top" secondItem="r4g-F9-eFm" secondAttribute="top" constant="20" id="hyX-2p-xRu"/>
+                            <constraint firstItem="nNi-oZ-RYx" firstAttribute="centerX" secondItem="lX0-nH-By3" secondAttribute="centerX" id="uAP-uq-NqJ"/>
+                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="BrF-hS-CIc" secondAttribute="trailing" constant="20" id="xUz-ww-6PU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Versículos" id="Ee6-5C-w66"/>
                     <connections>
+                        <outlet property="backButton" destination="kNo-5d-4KS" id="b1q-mi-Bfj"/>
                         <outlet property="capituloLabel" destination="nNi-oZ-RYx" id="vtd-hb-KdE"/>
+                        <outlet property="forwardButton" destination="rX6-bG-Dho" id="JVe-0X-Ire"/>
                         <outlet property="nomeLabel" destination="BrF-hS-CIc" id="ihi-7s-bWJ"/>
                         <outlet property="versiculoTableView" destination="YZN-ns-qBb" id="6yf-Cf-J1I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7E-M3-Ihb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3554" y="-623"/>
+            <point key="canvasLocation" x="3553.6231884057975" y="-623.4375"/>
         </scene>
         <!--Devocional-->
         <scene sceneID="A2m-an-UyP">
@@ -236,10 +277,32 @@
                     <view key="view" contentMode="scaleToFill" id="wlj-cN-bcn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BOl-Lb-cMT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2mj-ro-2nb"/>
                         <color key="backgroundColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BOl-Lb-cMT" firstAttribute="top" secondItem="2mj-ro-2nb" secondAttribute="top" id="U6a-KF-ExT"/>
+                            <constraint firstItem="2mj-ro-2nb" firstAttribute="bottom" secondItem="BOl-Lb-cMT" secondAttribute="bottom" id="bou-mg-ht3"/>
+                            <constraint firstItem="2mj-ro-2nb" firstAttribute="trailing" secondItem="BOl-Lb-cMT" secondAttribute="trailing" id="maH-Zo-Zgm"/>
+                            <constraint firstItem="BOl-Lb-cMT" firstAttribute="leading" secondItem="2mj-ro-2nb" secondAttribute="leading" id="q6J-AE-7Tn"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pedidos de Oração" id="J9M-VK-ekp"/>
+                    <navigationItem key="navigationItem" title="Pedidos de Oração" id="J9M-VK-ekp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ody-En-6K3">
+                            <color key="tintColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addOracaoTapped:" destination="vrj-zi-szP" id="Gmr-ka-Xs3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="oracoesTableView" destination="BOl-Lb-cMT" id="Jnn-1d-c98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usG-wP-UKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -379,6 +442,8 @@
     <resources>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="chevron.backward.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="chevron.forward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="list.triangle" catalog="system" width="128" height="91"/>
     </resources>
 </document>

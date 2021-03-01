@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OracaoCell" id="KGk-i7-Jjw" customClass="OracaoCell" customModule="myBible" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJ6-G6-F8J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="hOs-DD-aVn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR1-p6-39L">
+                        <rect key="frame" x="20" y="10" width="280" height="24"/>
+                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="17"/>
+                        <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KR1-p6-39L" secondAttribute="bottom" constant="10" id="4fd-B9-e5c"/>
+                    <constraint firstAttribute="bottom" secondItem="YJ6-G6-F8J" secondAttribute="bottom" id="9so-kZ-ne0"/>
+                    <constraint firstAttribute="trailing" secondItem="KR1-p6-39L" secondAttribute="trailing" constant="20" id="PSX-Jq-Pbc"/>
+                    <constraint firstItem="KR1-p6-39L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gkk-0q-tvG"/>
+                    <constraint firstItem="YJ6-G6-F8J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jGJ-Y7-IH3"/>
+                    <constraint firstAttribute="trailing" secondItem="YJ6-G6-F8J" secondAttribute="trailing" id="ofk-tt-GXN"/>
+                    <constraint firstItem="KR1-p6-39L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pHm-MC-Q5s"/>
+                    <constraint firstItem="YJ6-G6-F8J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zQZ-VJ-BLv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="oracaoLabel" destination="KR1-p6-39L" id="Unl-3U-dz9"/>
+            </connections>
+            <point key="canvasLocation" x="-197" y="52"/>
+        </tableViewCell>
+    </objects>
+</document>
