@@ -7,21 +7,202 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bíblia-->
+        <!--Livros-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BibliaVC" customModule="myBible" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LivrosVC" customModule="myBible" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha um livro da Bíblia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpw-Aw-gF4">
+                                <rect key="frame" x="20" y="118" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="22"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rvf-ir-6Aj">
+                                <rect key="frame" x="0.0" y="171.5" width="414" height="641.5"/>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rvf-ir-6Aj" secondAttribute="trailing" id="Fsv-k8-MhN"/>
+                            <constraint firstItem="Rvf-ir-6Aj" firstAttribute="top" secondItem="Dpw-Aw-gF4" secondAttribute="bottom" constant="30" id="LFO-fT-qMV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rvf-ir-6Aj" secondAttribute="bottom" id="Pcd-Xq-Zer"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dpw-Aw-gF4" secondAttribute="trailing" constant="20" id="ZN1-RG-pL9"/>
+                            <constraint firstItem="Dpw-Aw-gF4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="baB-eG-Hin"/>
+                            <constraint firstItem="Dpw-Aw-gF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="fzE-fB-hGW"/>
+                            <constraint firstItem="Rvf-ir-6Aj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gEv-oy-7Lr"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bíblia" id="ukN-pC-G2N"/>
+                    <navigationItem key="navigationItem" title="Livros" id="ukN-pC-G2N">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="aLS-uT-hBX"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="livrosTableView" destination="Rvf-ir-6Aj" id="blg-RP-ZUd"/>
+                        <segue destination="9Pl-GV-61O" kind="show" identifier="CapituloVC" id="jgi-x0-bfY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="1507"/>
+            <point key="canvasLocation" x="1954" y="-623"/>
+        </scene>
+        <!--Capítulos-->
+        <scene sceneID="Hlp-6D-mwr">
+            <objects>
+                <viewController id="9Pl-GV-61O" customClass="CapituloVC" customModule="myBible" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q48-N3-WkP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tu7-eb-6fz">
+                                <rect key="frame" x="0.0" y="158" width="150" height="655"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capítulos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT3-ks-bHe">
+                                        <rect key="frame" x="33" y="20" width="84.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CAr-ce-rrM">
+                                        <rect key="frame" x="0.0" y="61.5" width="150" height="593.5"/>
+                                        <color key="backgroundColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.8901960784313725" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RT3-ks-bHe" firstAttribute="centerX" secondItem="tu7-eb-6fz" secondAttribute="centerX" id="Dy3-Gj-dzy"/>
+                                    <constraint firstItem="CAr-ce-rrM" firstAttribute="top" secondItem="RT3-ks-bHe" secondAttribute="bottom" constant="20" id="Pke-ef-QgR"/>
+                                    <constraint firstAttribute="trailing" secondItem="CAr-ce-rrM" secondAttribute="trailing" id="SVL-hQ-OD4"/>
+                                    <constraint firstItem="RT3-ks-bHe" firstAttribute="top" secondItem="tu7-eb-6fz" secondAttribute="top" constant="20" id="YdZ-Lt-hwC"/>
+                                    <constraint firstAttribute="width" constant="150" id="afF-VZ-H86"/>
+                                    <constraint firstAttribute="bottom" secondItem="CAr-ce-rrM" secondAttribute="bottom" id="bgy-Sj-xFy"/>
+                                    <constraint firstItem="CAr-ce-rrM" firstAttribute="leading" secondItem="tu7-eb-6fz" secondAttribute="leading" id="dqr-lv-ZpE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Livro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3D-JB-8EZ">
+                                <rect key="frame" x="20" y="108" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-O8-Zgu">
+                                <rect key="frame" x="165" y="168" width="229" height="104.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6o-uZ-gyH">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-ko-6Kh">
+                                        <rect key="frame" x="0.0" y="41.5" width="56" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testamento" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuU-Tv-6EP">
+                                        <rect key="frame" x="0.0" y="83" width="103.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Comentário" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zWH-Mq-AUe">
+                                <rect key="frame" x="160" y="292.5" width="239" height="500.5"/>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lgF-Ag-Jqv"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w4L-O8-Zgu" firstAttribute="leading" secondItem="tu7-eb-6fz" secondAttribute="trailing" constant="15" id="7jZ-Fv-NQv"/>
+                            <constraint firstItem="tu7-eb-6fz" firstAttribute="top" secondItem="o3D-JB-8EZ" secondAttribute="bottom" constant="20" id="9kX-Fz-Te7"/>
+                            <constraint firstItem="tu7-eb-6fz" firstAttribute="bottom" secondItem="lgF-Ag-Jqv" secondAttribute="bottom" id="E2K-Jm-0s1"/>
+                            <constraint firstItem="lgF-Ag-Jqv" firstAttribute="trailing" secondItem="o3D-JB-8EZ" secondAttribute="trailing" constant="20" id="E2i-RV-5ej"/>
+                            <constraint firstItem="zWH-Mq-AUe" firstAttribute="leading" secondItem="tu7-eb-6fz" secondAttribute="trailing" constant="10" id="KCq-Ou-7ap"/>
+                            <constraint firstItem="zWH-Mq-AUe" firstAttribute="top" secondItem="w4L-O8-Zgu" secondAttribute="bottom" constant="20" id="KIA-w3-cr3"/>
+                            <constraint firstItem="o3D-JB-8EZ" firstAttribute="top" secondItem="lgF-Ag-Jqv" secondAttribute="top" constant="20" id="Ltw-yl-3Xp"/>
+                            <constraint firstItem="o3D-JB-8EZ" firstAttribute="leading" secondItem="lgF-Ag-Jqv" secondAttribute="leading" constant="20" id="O0d-ah-WGS"/>
+                            <constraint firstItem="w4L-O8-Zgu" firstAttribute="top" secondItem="o3D-JB-8EZ" secondAttribute="bottom" constant="30" id="UaD-nZ-OIn"/>
+                            <constraint firstItem="lgF-Ag-Jqv" firstAttribute="trailing" secondItem="zWH-Mq-AUe" secondAttribute="trailing" constant="15" id="bPn-fP-h2f"/>
+                            <constraint firstItem="lgF-Ag-Jqv" firstAttribute="trailing" secondItem="w4L-O8-Zgu" secondAttribute="trailing" constant="20" id="kkN-nS-QfY"/>
+                            <constraint firstItem="lgF-Ag-Jqv" firstAttribute="bottom" secondItem="zWH-Mq-AUe" secondAttribute="bottom" constant="20" id="xSH-Ae-ayQ"/>
+                            <constraint firstItem="tu7-eb-6fz" firstAttribute="leading" secondItem="lgF-Ag-Jqv" secondAttribute="leading" id="zNF-S8-h7q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Capítulos" id="Ufs-NG-Zvi"/>
+                    <connections>
+                        <outlet property="autorLabel" destination="Z6o-uZ-gyH" id="w0j-yV-lSA"/>
+                        <outlet property="capitulosTableView" destination="CAr-ce-rrM" id="4Qc-84-Ii0"/>
+                        <outlet property="comentarioTextView" destination="zWH-Mq-AUe" id="u47-8N-DHZ"/>
+                        <outlet property="grupoLabel" destination="SfC-ko-6Kh" id="Vzc-6i-4T0"/>
+                        <outlet property="nomeLabel" destination="o3D-JB-8EZ" id="Moh-Su-yDT"/>
+                        <outlet property="testamentoLabel" destination="WuU-Tv-6EP" id="Lhu-ca-8kc"/>
+                        <segue destination="oYM-R7-O98" kind="show" identifier="VersiculoVC" id="K0A-gM-CNl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPc-d5-jfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757.971014492754" y="-623.4375"/>
+        </scene>
+        <!--Versículos-->
+        <scene sceneID="y0X-uc-8kE">
+            <objects>
+                <viewController id="oYM-R7-O98" customClass="VersiculoVC" customModule="myBible" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lX0-nH-By3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Livro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrF-hS-CIc">
+                                <rect key="frame" x="20" y="118" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capítulo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNi-oZ-RYx">
+                                <rect key="frame" x="20" y="160" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YZN-ns-qBb">
+                                <rect key="frame" x="0.0" y="217" width="414" height="596"/>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r4g-F9-eFm"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="r4g-F9-eFm" firstAttribute="bottom" secondItem="YZN-ns-qBb" secondAttribute="bottom" id="25p-vS-Llc"/>
+                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="nNi-oZ-RYx" secondAttribute="trailing" constant="20" id="BAZ-wW-o3D"/>
+                            <constraint firstItem="BrF-hS-CIc" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" constant="20" id="JKH-cf-x3h"/>
+                            <constraint firstItem="BrF-hS-CIc" firstAttribute="top" secondItem="r4g-F9-eFm" secondAttribute="top" constant="30" id="MZi-4I-xcY"/>
+                            <constraint firstItem="YZN-ns-qBb" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" id="OmW-UO-aAf"/>
+                            <constraint firstItem="YZN-ns-qBb" firstAttribute="top" secondItem="nNi-oZ-RYx" secondAttribute="bottom" constant="30" id="UOo-cO-ZfZ"/>
+                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="BrF-hS-CIc" secondAttribute="trailing" constant="20" id="axZ-4R-IvJ"/>
+                            <constraint firstItem="r4g-F9-eFm" firstAttribute="trailing" secondItem="YZN-ns-qBb" secondAttribute="trailing" id="gzP-lL-Mto"/>
+                            <constraint firstItem="nNi-oZ-RYx" firstAttribute="top" secondItem="BrF-hS-CIc" secondAttribute="bottom" constant="15" id="vCZ-m8-AHL"/>
+                            <constraint firstItem="nNi-oZ-RYx" firstAttribute="leading" secondItem="r4g-F9-eFm" secondAttribute="leading" constant="20" id="yCm-Ji-y6e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Versículos" id="Ee6-5C-w66"/>
+                    <connections>
+                        <outlet property="capituloLabel" destination="nNi-oZ-RYx" id="vtd-hb-KdE"/>
+                        <outlet property="nomeLabel" destination="BrF-hS-CIc" id="ihi-7s-bWJ"/>
+                        <outlet property="versiculoTableView" destination="YZN-ns-qBb" id="6yf-Cf-J1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7E-M3-Ihb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3554" y="-623"/>
         </scene>
         <!--Devocional-->
         <scene sceneID="A2m-an-UyP">
@@ -46,7 +227,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq6-IC-bai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="785"/>
+            <point key="canvasLocation" x="1087" y="63"/>
         </scene>
         <!--Pedidos de Oração-->
         <scene sceneID="2Hs-Ri-7dR">
@@ -62,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usG-wP-UKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="1507"/>
+            <point key="canvasLocation" x="1954" y="796"/>
         </scene>
         <!--Devocional-->
         <scene sceneID="iWY-rp-5Eu">
@@ -114,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUc-UX-04w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="1506.6964285714284"/>
+            <point key="canvasLocation" x="1954" y="63"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="beh-0S-xxA">
@@ -138,11 +319,11 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="62.946428571428569"/>
         </scene>
-        <!--Bible-->
+        <!--Bíblia-->
         <scene sceneID="7ex-du-ZNS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wwq-gV-QDs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bible" image="book.fill" catalog="system" id="fRx-p0-OBG">
+                    <tabBarItem key="tabBarItem" title="Bíblia" image="book.fill" catalog="system" id="fRx-p0-OBG">
                         <color key="badgeColor" red="1" green="0.68235294117647061" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -155,6 +336,9 @@
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -163,7 +347,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJq-yN-upf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="785"/>
+            <point key="canvasLocation" x="1087" y="-623"/>
         </scene>
         <!--Orações-->
         <scene sceneID="iW1-n5-v2P">
@@ -189,7 +373,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJ4-SC-eq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="785"/>
+            <point key="canvasLocation" x="1087" y="796"/>
         </scene>
     </scenes>
     <resources>

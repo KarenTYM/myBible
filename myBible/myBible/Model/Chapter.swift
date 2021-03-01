@@ -31,12 +31,12 @@ import Foundation
 struct Chapter:Codable {
     let book:BookChapter
     let chapter:ChapterChapter
-    let verse:[VerseChapter]
+    let verses:[VerseChapter]
 }
 
 
 struct BookChapter:Codable {
-    let abbrev:[String:String]
+    let abbrev:Abbrev
     let name:String
     let author:String
     let group:String
@@ -45,7 +45,7 @@ struct BookChapter:Codable {
 
 struct ChapterChapter:Codable {
     let number:Int
-    let verse:Int
+    let verses:Int
 }
 
 struct VerseChapter:Codable {
