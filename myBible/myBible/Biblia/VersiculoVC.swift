@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VersiculoVC: UIViewController {
+class VersiculoVC: BaseViewController {
 
     @IBOutlet weak var nomeLabel: UILabel!
     @IBOutlet weak var capituloLabel: UILabel!
@@ -16,7 +16,6 @@ class VersiculoVC: UIViewController {
     @IBOutlet weak var forwardButton: UIButton!
     
     var numeroVersiculos:Int = 0
-//    var chapterVerses:BookDetail?
     var verse:[VerseChapter] = []
     var bookname:String = ""
     var capEscolhido:Int = 1
@@ -28,6 +27,7 @@ class VersiculoVC: UIViewController {
 
         self.configView()
         self.fetchCapter()
+        self.showLoading()
     }
     
     
@@ -40,6 +40,7 @@ class VersiculoVC: UIViewController {
     
     private func fetchCapter() {
         API.getVerses(abbrev: self.bookname, chapter: String(self.capEscolhido)) { (chapter) in
+            self.hideLoading()
             self.nomeLabel.text = chapter.book.name
             self.capituloLabel.text = "Capítulo: \(String(chapter.chapter.number))"
             self.numeroVersiculos = chapter.chapter.verses

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DevocionalVC: UIViewController {
+class DevocionalVC: BaseViewController {
     
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var passagemLabel: UILabel!
@@ -17,6 +17,7 @@ class DevocionalVC: UIViewController {
         super.viewDidLoad()
         
         self.configView()
+        self.showLoading()
     }
 
     
@@ -25,6 +26,7 @@ class DevocionalVC: UIViewController {
         formatter.dateFormat = "d/MMM/y - E"
         self.dataLabel.text = formatter.string(from: Date())
         API.getRandomVerse(version: "nvi") { (verse) in
+            self.hideLoading()
             self.passagemLabel.text = "\(verse.book.name) \(verse.chapter):\(verse.number)"
             self.textoLabel.text = "\"\(verse.text)\""
         }

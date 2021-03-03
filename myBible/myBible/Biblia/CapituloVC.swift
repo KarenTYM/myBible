@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CapituloVC: UIViewController {
+class CapituloVC: BaseViewController {
     
     @IBOutlet weak var nomeLabel: UILabel!
     @IBOutlet weak var capitulosTableView: UITableView!
@@ -28,6 +28,7 @@ class CapituloVC: UIViewController {
         self.configView()
         self.fetchBookDetails()
         self.numCapitulos()
+        self.showLoading()
     }
     
     
@@ -43,6 +44,7 @@ class CapituloVC: UIViewController {
     // MARK: - fetchBookDetails()
     private func fetchBookDetails() {
         API.getBookDetails(abbrev: self.book?.abbrev.pt ?? "") { (book) in
+            self.hideLoading()
             self.nomeLabel.text = book.name ?? ""
             self.autorLabel.text = "Autor: \(book.author)"
             self.grupoLabel.text = "Grupo: \(book.group)"

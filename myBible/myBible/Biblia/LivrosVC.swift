@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LivrosVC: UIViewController {
+class LivrosVC: BaseViewController {
 
     @IBOutlet weak var livrosTableView: UITableView!
     
@@ -19,6 +19,7 @@ class LivrosVC: UIViewController {
 
         self.configView()
         self.fetchBooks()
+        self.showLoading()
     }
     
     
@@ -35,6 +36,7 @@ class LivrosVC: UIViewController {
     private func fetchBooks() {
         API.getBooks { (books) in
             self.booksArray = books
+            self.hideLoading()
             self.livrosTableView.reloadData()
         }
     }
