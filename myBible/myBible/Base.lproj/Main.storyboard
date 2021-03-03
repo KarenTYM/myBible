@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="-623"/>
+            <point key="canvasLocation" x="1696" y="-908"/>
         </scene>
         <!--Capítulos-->
         <scene sceneID="Hlp-6D-mwr">
@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPc-d5-jfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2757.971014492754" y="-623.4375"/>
+            <point key="canvasLocation" x="2487" y="-908"/>
         </scene>
         <!--Versículos-->
         <scene sceneID="y0X-uc-8kE">
@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7E-M3-Ihb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3553.6231884057975" y="-623.4375"/>
+            <point key="canvasLocation" x="3287" y="-908"/>
         </scene>
         <!--Devocional-->
         <scene sceneID="A2m-an-UyP">
@@ -268,7 +268,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq6-IC-bai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="63"/>
+            <point key="canvasLocation" x="929" y="-228"/>
         </scene>
         <!--Pedidos de Oração-->
         <scene sceneID="2Hs-Ri-7dR">
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usG-wP-UKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="796"/>
+            <point key="canvasLocation" x="1696" y="441"/>
         </scene>
         <!--Devocional-->
         <scene sceneID="iWY-rp-5Eu">
@@ -358,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUc-UX-04w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="63"/>
+            <point key="canvasLocation" x="1696" y="-228"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="beh-0S-xxA">
@@ -376,11 +376,12 @@
                         <segue destination="Wwq-gV-QDs" kind="relationship" relationship="viewControllers" id="OO5-0f-e6s"/>
                         <segue destination="N7w-0m-8kF" kind="relationship" relationship="viewControllers" id="DIY-6J-LQO"/>
                         <segue destination="zCW-LN-84c" kind="relationship" relationship="viewControllers" id="wcS-I4-VZB"/>
+                        <segue destination="z5N-Pe-YEV" kind="relationship" relationship="viewControllers" id="R3s-UC-Lre"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y67-aJ-I6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="62.946428571428569"/>
+            <point key="canvasLocation" x="-219" y="546"/>
         </scene>
         <!--Bíblia-->
         <scene sceneID="7ex-du-ZNS">
@@ -410,7 +411,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJq-yN-upf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="-623"/>
+            <point key="canvasLocation" x="929" y="-908"/>
         </scene>
         <!--Orações-->
         <scene sceneID="iW1-n5-v2P">
@@ -436,14 +437,380 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJ4-SC-eq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="796"/>
+            <point key="canvasLocation" x="929" y="441"/>
+        </scene>
+        <!--Quis da Bíblia-->
+        <scene sceneID="35D-oB-UQZ">
+            <objects>
+                <viewController id="9MC-F5-rq4" customClass="QuisVC" customModule="myBible" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7QV-eH-5al">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunta: " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cso-mC-ZOt">
+                                <rect key="frame" x="20" y="118" width="374" height="18.5"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="17"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunta" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-6x-3zH">
+                                <rect key="frame" x="20" y="186.5" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-J3-VgO">
+                                <rect key="frame" x="20" y="390.5" width="374" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imv-nt-4qK">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="34"/>
+                                        <color key="backgroundColor" red="0.01176470588" green="0.31372549020000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="8uK-Yj-rMb"/>
+                                            <constraint firstAttribute="height" constant="34" id="Khc-tY-8Sk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <state key="normal" title="D">
+                                            <color key="titleColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="respostaButtonTapped:" destination="9MC-F5-rq4" eventType="touchUpInside" id="qpt-RO-b6x"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resposta D" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klE-KI-z2h">
+                                        <rect key="frame" x="45" y="6.5" width="329" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-hk-bSP">
+                                <rect key="frame" x="20" y="341.5" width="374" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6e-OS-Ow9">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="34"/>
+                                        <color key="backgroundColor" red="0.01176470588" green="0.31372549020000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="jHW-pj-dUR"/>
+                                            <constraint firstAttribute="height" constant="34" id="u0N-5C-1KX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <state key="normal" title="C">
+                                            <color key="titleColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="respostaButtonTapped:" destination="9MC-F5-rq4" eventType="touchUpInside" id="aaH-Gg-wfA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resposta C" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfA-vM-KCl">
+                                        <rect key="frame" x="45" y="6.5" width="329" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="X4n-OD-5rj">
+                                <rect key="frame" x="20" y="292.5" width="374" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnN-f7-eU2">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="34"/>
+                                        <color key="backgroundColor" red="0.01176470588" green="0.31372549020000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="JcQ-uC-Xjz"/>
+                                            <constraint firstAttribute="width" constant="35" id="eQ3-fW-dDa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <state key="normal" title="B">
+                                            <color key="titleColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="respostaButtonTapped:" destination="9MC-F5-rq4" eventType="touchUpInside" id="DOV-6h-Xt8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resposta B" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6o-Mb-SfS">
+                                        <rect key="frame" x="45" y="6.5" width="329" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4TO-H3-ZO1">
+                                <rect key="frame" x="20" y="243.5" width="374" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFZ-Av-LBd">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="34"/>
+                                        <color key="backgroundColor" red="0.081886135040000002" green="0.36755007509999998" blue="0.45538163189999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="0qD-Wg-QpJ"/>
+                                            <constraint firstAttribute="width" constant="35" id="UGq-fq-hbo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                        <state key="normal" title="A">
+                                            <color key="titleColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="respostaButtonTapped:" destination="9MC-F5-rq4" eventType="touchUpInside" id="t2f-GH-Vo5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resposta A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSS-dU-5VA">
+                                        <rect key="frame" x="45" y="7" width="329" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="19"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vny-1z-cjG">
+                                <rect key="frame" x="344" y="733" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aUn-ID-fez"/>
+                                    <constraint firstAttribute="width" constant="50" id="fKA-VW-HbK"/>
+                                </constraints>
+                                <color key="tintColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.right.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="frenteButtonTapped:" destination="9MC-F5-rq4" eventType="touchUpInside" id="eBt-8H-Q06"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVa-05-zkW">
+                                <rect key="frame" x="20" y="733" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9y2-74-TGq"/>
+                                    <constraint firstAttribute="height" constant="50" id="sTh-Yd-bkk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.backward.circle.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="voltarButtonTapped:" destination="9MC-F5-rq4" eventType="touchUpInside" id="ej1-nX-cvS"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Comentário" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xI3-bt-wRH">
+                                <rect key="frame" x="20" y="486" width="374" height="217"/>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfg-eO-wt1">
+                                <rect key="frame" x="147" y="753" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="47C-uF-tf1"/>
+                                </constraints>
+                                <state key="normal" title="Reiniciar Quis">
+                                    <color key="titleColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reiniciarButtonTapped:" destination="9MC-F5-rq4" eventType="touchUpInside" id="zpf-N7-Mh0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resposta Certa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHF-lq-yxX">
+                                <rect key="frame" x="20" y="454.5" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="20"/>
+                                <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8tK-ES-pKG"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cso-mC-ZOt" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="4DU-BP-gkx"/>
+                            <constraint firstItem="J2e-hk-bSP" firstAttribute="top" secondItem="X4n-OD-5rj" secondAttribute="bottom" constant="15" id="7H2-Te-0fO"/>
+                            <constraint firstItem="cVa-05-zkW" firstAttribute="top" secondItem="xI3-bt-wRH" secondAttribute="bottom" constant="30" id="9yg-9b-BeJ"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="cso-mC-ZOt" secondAttribute="trailing" constant="20" id="Ap6-LQ-7uR"/>
+                            <constraint firstItem="vHF-lq-yxX" firstAttribute="top" secondItem="yEs-J3-VgO" secondAttribute="bottom" constant="30" id="BPM-sZ-IrO"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="4TO-H3-ZO1" secondAttribute="trailing" constant="20" id="BPY-Tw-U2Q"/>
+                            <constraint firstItem="4TO-H3-ZO1" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="Gq0-ao-3Ob"/>
+                            <constraint firstItem="J2e-hk-bSP" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="GvF-rT-GIf"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="bottom" secondItem="cVa-05-zkW" secondAttribute="bottom" constant="30" id="Hic-sL-baO"/>
+                            <constraint firstItem="gfg-eO-wt1" firstAttribute="centerX" secondItem="7QV-eH-5al" secondAttribute="centerX" id="Jed-TM-1lC"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="Vny-1z-cjG" secondAttribute="trailing" constant="20" id="KoZ-1D-nHL"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="xI3-bt-wRH" secondAttribute="trailing" constant="20" id="Nw5-r7-Jod"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="yEs-J3-VgO" secondAttribute="trailing" constant="20" id="OWU-p0-fHz"/>
+                            <constraint firstItem="eg8-6x-3zH" firstAttribute="top" secondItem="cso-mC-ZOt" secondAttribute="bottom" constant="50" id="SGl-LH-GIK"/>
+                            <constraint firstItem="cso-mC-ZOt" firstAttribute="top" secondItem="8tK-ES-pKG" secondAttribute="top" constant="30" id="StR-Ta-kW7"/>
+                            <constraint firstItem="cVa-05-zkW" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="TiO-6G-lwA"/>
+                            <constraint firstItem="xI3-bt-wRH" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="VSx-g4-Mqx"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="X4n-OD-5rj" secondAttribute="trailing" constant="20" id="XAc-Oz-ww3"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="bottom" secondItem="gfg-eO-wt1" secondAttribute="bottom" constant="30" id="XJN-6i-oxB"/>
+                            <constraint firstItem="X4n-OD-5rj" firstAttribute="top" secondItem="4TO-H3-ZO1" secondAttribute="bottom" constant="15" id="Yyc-w3-Mnf"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="J2e-hk-bSP" secondAttribute="trailing" constant="20" id="Z6g-PZ-iPq"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="eg8-6x-3zH" secondAttribute="trailing" constant="20" id="akb-H1-eNk"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="bottom" secondItem="Vny-1z-cjG" secondAttribute="bottom" constant="30" id="amk-rI-79I"/>
+                            <constraint firstItem="8tK-ES-pKG" firstAttribute="trailing" secondItem="vHF-lq-yxX" secondAttribute="trailing" constant="20" id="beI-gV-QIj"/>
+                            <constraint firstItem="xI3-bt-wRH" firstAttribute="top" secondItem="vHF-lq-yxX" secondAttribute="bottom" constant="10" id="cOM-zS-9P4"/>
+                            <constraint firstItem="yEs-J3-VgO" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="cZf-da-2vh"/>
+                            <constraint firstItem="X4n-OD-5rj" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="dPp-C7-k1a"/>
+                            <constraint firstItem="4TO-H3-ZO1" firstAttribute="top" secondItem="eg8-6x-3zH" secondAttribute="bottom" constant="30" id="dyl-v9-XhD"/>
+                            <constraint firstItem="yEs-J3-VgO" firstAttribute="top" secondItem="J2e-hk-bSP" secondAttribute="bottom" constant="15" id="kFP-SD-rOP"/>
+                            <constraint firstItem="vHF-lq-yxX" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="kPb-4N-sF2"/>
+                            <constraint firstItem="eg8-6x-3zH" firstAttribute="leading" secondItem="8tK-ES-pKG" secondAttribute="leading" constant="20" id="tIo-hV-paa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quis da Bíblia" id="EL0-MP-uvy">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="Ode-eT-NF2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aButton" destination="AFZ-Av-LBd" id="fKa-Xk-4Sf"/>
+                        <outlet property="bButton" destination="dnN-f7-eU2" id="TOu-cc-fOE"/>
+                        <outlet property="cButton" destination="U6e-OS-Ow9" id="TZd-82-QKU"/>
+                        <outlet property="comentarioTextView" destination="xI3-bt-wRH" id="mQq-Ga-BeJ"/>
+                        <outlet property="dButton" destination="Imv-nt-4qK" id="ehN-Ur-6af"/>
+                        <outlet property="frenteButton" destination="Vny-1z-cjG" id="6UV-7g-iuk"/>
+                        <outlet property="numDaPerguntaLabel" destination="cso-mC-ZOt" id="huu-Dc-BSr"/>
+                        <outlet property="perguntaLabel" destination="eg8-6x-3zH" id="l6m-sE-OeD"/>
+                        <outlet property="reiniciarButton" destination="gfg-eO-wt1" id="MAJ-jy-6Bx"/>
+                        <outlet property="respALabel" destination="fSS-dU-5VA" id="Bhf-KK-PNw"/>
+                        <outlet property="respBLabel" destination="O6o-Mb-SfS" id="UIq-ka-mGR"/>
+                        <outlet property="respCLabel" destination="YfA-vM-KCl" id="PLb-8L-c41"/>
+                        <outlet property="respCertaLabel" destination="vHF-lq-yxX" id="yq5-d9-cj5"/>
+                        <outlet property="respDLabel" destination="klE-KI-z2h" id="Igi-yd-lBL"/>
+                        <outlet property="voltarButton" destination="cVa-05-zkW" id="jNB-H3-4qg"/>
+                        <segue destination="GGb-8g-1yT" kind="presentation" identifier="ResultadoVC" id="c9A-a3-MCe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPx-6d-RDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695.6521739130435" y="1115.625"/>
+        </scene>
+        <!--Resultado-->
+        <scene sceneID="4Vc-Ef-ULu">
+            <objects>
+                <viewController id="GGb-8g-1yT" customClass="ResultadoVC" customModule="myBible" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkV-1Y-cuN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acertou x de 40 perguntas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gup-LA-GYb">
+                                <rect key="frame" x="20" y="177" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lii-uQ-U3K" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="87" y="388" width="240" height="350"/>
+                                <color key="backgroundColor" red="0.0" green="0.38823529411764707" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="5et-Z8-pj6"/>
+                                    <constraint firstAttribute="width" constant="240" id="cg7-Yk-lr6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="great"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8w-d7-P2p">
+                                <rect key="frame" x="20" y="100" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.89019607840000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJC-Xw-YXD" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="87" y="388" width="240" height="350"/>
+                                <color key="backgroundColor" red="0.0" green="0.38823529411764707" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Prx-aJ-4jI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="sad"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-dT-ogu" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="87" y="388" width="240" height="350"/>
+                                <color key="backgroundColor" red="0.0" green="0.38823529411764707" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3VI-ac-38x"/>
+                                    <constraint firstAttribute="height" constant="350" id="40H-OA-o08"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="excelente"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLJ-5d-0vH" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="87" y="388" width="240" height="350"/>
+                                <color key="backgroundColor" red="0.0" green="0.38823529411764707" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4nD-1e-Rbd"/>
+                                    <constraint firstAttribute="height" constant="350" id="hrs-L3-FEz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="study"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fys-fL-b8x"/>
+                        <color key="backgroundColor" red="0.01176470588" green="0.31372549020000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fys-fL-b8x" firstAttribute="bottom" secondItem="nWe-dT-ogu" secondAttribute="bottom" constant="70" id="25a-lH-oTD"/>
+                            <constraint firstItem="cLJ-5d-0vH" firstAttribute="centerX" secondItem="gkV-1Y-cuN" secondAttribute="centerX" id="3Om-zp-Pjj"/>
+                            <constraint firstItem="Fys-fL-b8x" firstAttribute="bottom" secondItem="lii-uQ-U3K" secondAttribute="bottom" constant="70" id="BtH-Im-byz"/>
+                            <constraint firstItem="Gup-LA-GYb" firstAttribute="leading" secondItem="Fys-fL-b8x" secondAttribute="leading" constant="20" id="Dqc-hk-d1x"/>
+                            <constraint firstItem="lii-uQ-U3K" firstAttribute="centerX" secondItem="gkV-1Y-cuN" secondAttribute="centerX" id="EZL-zq-t10"/>
+                            <constraint firstItem="Gup-LA-GYb" firstAttribute="top" secondItem="b8w-d7-P2p" secondAttribute="bottom" constant="50" id="FCZ-By-AAw"/>
+                            <constraint firstItem="Fys-fL-b8x" firstAttribute="trailing" secondItem="Gup-LA-GYb" secondAttribute="trailing" constant="20" id="GWw-rE-6Zi"/>
+                            <constraint firstItem="b8w-d7-P2p" firstAttribute="top" secondItem="Fys-fL-b8x" secondAttribute="top" constant="100" id="GtE-7d-KNC"/>
+                            <constraint firstItem="b8w-d7-P2p" firstAttribute="leading" secondItem="Fys-fL-b8x" secondAttribute="leading" constant="20" id="MFK-Be-neZ"/>
+                            <constraint firstItem="Fys-fL-b8x" firstAttribute="trailing" secondItem="GJC-Xw-YXD" secondAttribute="trailing" constant="87" id="S00-PP-AGr"/>
+                            <constraint firstItem="GJC-Xw-YXD" firstAttribute="leading" secondItem="Fys-fL-b8x" secondAttribute="leading" constant="87" id="YQv-tm-G2g"/>
+                            <constraint firstItem="Fys-fL-b8x" firstAttribute="trailing" secondItem="b8w-d7-P2p" secondAttribute="trailing" constant="20" id="YYD-kC-uuD"/>
+                            <constraint firstItem="nWe-dT-ogu" firstAttribute="centerX" secondItem="gkV-1Y-cuN" secondAttribute="centerX" id="mmL-2o-vTl"/>
+                            <constraint firstItem="Fys-fL-b8x" firstAttribute="bottom" secondItem="cLJ-5d-0vH" secondAttribute="bottom" constant="70" id="vcg-nE-MB2"/>
+                            <constraint firstItem="Fys-fL-b8x" firstAttribute="bottom" secondItem="GJC-Xw-YXD" secondAttribute="bottom" constant="70" id="yNM-KY-e6b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resultado" id="1wa-kJ-v5F"/>
+                    <connections>
+                        <outlet property="acertosLabel" destination="Gup-LA-GYb" id="Rsw-Fl-SjN"/>
+                        <outlet property="excelenteAnimationView" destination="nWe-dT-ogu" id="b6g-pc-9DA"/>
+                        <outlet property="greatAnimationView" destination="lii-uQ-U3K" id="O5x-ct-0YH"/>
+                        <outlet property="mensagemLabel" destination="b8w-d7-P2p" id="HWJ-zN-G0W"/>
+                        <outlet property="sadAnimationView" destination="GJC-Xw-YXD" id="Ceu-v4-iCo"/>
+                        <outlet property="studyAnimationView" destination="cLJ-5d-0vH" id="KYr-WN-aUF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fG4-qw-J9j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="1116"/>
+        </scene>
+        <!--Quis-->
+        <scene sceneID="IPh-ip-LDR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z5N-Pe-YEV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Quis" image="questionmark.square" catalog="system" id="glO-zi-qNi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I0x-9x-aVC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.01176470588" green="0.31372549020000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9MC-F5-rq4" kind="relationship" relationship="rootViewController" id="0aS-kg-STw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxE-6y-JiD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.68115942028987" y="1116.9642857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.backward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="chevron.forward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="list.triangle" catalog="system" width="128" height="91"/>
+        <image name="questionmark.square" catalog="system" width="128" height="114"/>
     </resources>
 </document>
